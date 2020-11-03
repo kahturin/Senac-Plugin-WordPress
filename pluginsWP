@@ -1,0 +1,20 @@
+<?php
+
+/*
+ * Plugin Name: Flame
+ * Plugin URI: https://github.com/kahturin/
+ * Description: Este é um plugin que vai fazer sua máquina pegar fogo
+ * Version: 0.0.1
+ * Author: Karina Turin
+ * Author URI: https://github.com/kahturin/
+ * License: CC BY
+ */
+
+// o gancho de filtro
+
+add_filter('login_errors', 'alteraMensagem');
+
+function alteraMensagem(){
+	return 'credenciais inválidas';
+}
+
